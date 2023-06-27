@@ -1,24 +1,52 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
-import { Link } from "expo-router";
+import {  TextInput, LogBox, StyleSheet, Image , Text, View, TouchableOpacity } from 'react-native';
 
-export default function App() {
+
+export default function App() { 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Image style={{height: 150, width: 150}} source={require('../assets/gatinho.jpg')} />
-    <Text>Nome do App</Text>
-    <Text>
-      texto 1
-    </Text>
-    <Text>
-    texto 2
-    </Text>
-    <Text>
-      texto 3
-    </Text>
-    <Text>
-      tetxto 4
-    </Text>
-  </View>
-);
-};
+    <View style={styles.container}>
+      <Image style={{height: 150, width: 150}} source={require('../assets/gatinho.jpg')} />
+      <Text style={{fontWeight: "center"}}>Pawsome</Text>
+      <Text>Um app para quem gosta de gatos, nele você pode ver videos e fotos de gatos fofos 
+      encontrar dicas para cuidar do seu pet entre outros tipos de entrenimentos para você e seu gato</Text>
+      <Text>crie sua conta</Text>
+      <TextInput style={{borderWidth:2}} 
+      placeholder='Nome'
+      />
+      <TextInput style={{borderWidth:2}} 
+      placeholder='Sobrenome'
+      />
+      <TextInput style={{borderWidth:2}} 
+      placeholder='Data de nascimento'
+      />
+      <TextInput style={{borderWidth:2}} 
+      placeholder='CPF'
+      />
+      <TextInput style={{borderWidth:2}} 
+      placeholder='E-mail'
+      />
+      <TextInput style={{borderWidth:2}} 
+      placeholder='Senha'
+      />
+      <TouchableOpacity style={{borderWidth:2}} >Criar Conta</TouchableOpacity>
+
+      <StatusBar style="auto" />
+
+      
+
+    </View>
+  );
+  
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+
+
+});

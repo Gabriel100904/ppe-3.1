@@ -5,21 +5,21 @@ import { Link } from "expo-router";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image style={{height: 80, width: 80}} source={require('../assets/icon.png')} />
-      <Text style={styles.titulo}>Doguinho</Text>
+      <Image style={{height: 80, width: 80}} source={require('../assets/gatinho.jpg')} />
+      <Text style={styles.titulo}>Pawsome</Text>
       <Link style={{marginTop: 15, fontSize: 15, color: 'blue'}} href="/cadastro">Ir para o Cadastro</Link>
     <View style={styles.imagens}>
       <View style={styles.item}>
-        <Image style={{height: 90, width: 90}} source={require('../assets/img1.png')} />
-        <Image style={{height: 90, width: 90}} source={require('../assets/img2.png')} />  
-        <Image style={{height: 90, width: 90}} source={require('../assets/img3.png')} />
-        <Image style={{height: 90, width: 90}} source={require('../assets/img4.png')} />
+        <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
+        <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
+        <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
+        <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
       </View>
       <View style={styles.item}>
-         <Image style={{height: 90, width: 90}} source={require('../assets/img5.png')} />
-        <Image style={{height: 90, width: 90}} source={require('../assets/img6.png')} />
-        <Image style={{height: 90, width: 90}} source={require('../assets/img7.png')} />
-        <Image style={{height: 90, width: 90}} source={require('../assets/img8.png')} />
+      <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
+      <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
+      <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
+      <Image style={{height: 90, width: 90}} source={require('../assets/gatinho.jpg')} />
       </View>
     </View>
     </View>
